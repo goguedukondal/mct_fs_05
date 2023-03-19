@@ -10,7 +10,7 @@ const User = () => {
   const value = useSelector((state) => state.value);
   const dispatch = useDispatch();
  
-  const [show, setShow] = useState(false);
+ 
 
   useEffect(() => {
     fetch(`https://randomuser.me/api/?results=20`)
@@ -25,10 +25,7 @@ const User = () => {
     console.log(e.target.value);
     const value1 = e.target.value;
     dispatch(setValue(value1));
-    if (value1 !== 1) {
-      setShow(true);
     
-    }
   }
   return (
     <div className="user_container">
