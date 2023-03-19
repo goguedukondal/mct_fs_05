@@ -1,7 +1,7 @@
 import React from "react";
 import "./Login.css";
 import { useState } from "react";
-import Home from "./Home";
+
 import {Link} from 'react-router-dom'
 
 const Login = () => {
