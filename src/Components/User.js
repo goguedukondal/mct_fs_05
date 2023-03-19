@@ -9,7 +9,7 @@ const User = () => {
   const [data, setData] = useState([]);
   const value = useSelector((state) => state.value);
   const dispatch = useDispatch();
-  const [sort, setSort] = useState();
+ 
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const User = () => {
     dispatch(setValue(value1));
     if (value1 !== 1) {
       setShow(true);
-      setSort(value1);
+    
     }
   }
   return (
