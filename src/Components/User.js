@@ -91,7 +91,7 @@ const User = () => {
                   return (
                     <tr className="body_part" key={idx}>
                       <td>
-                        <img src={e.picture.thumbnail} />
+                        <img alt="pic1" src={e.picture.thumbnail} />
                       </td>
                       <td>{e.name.first}</td>
                       <td>{e.email}</td>
@@ -109,7 +109,7 @@ const User = () => {
                   return (
                     <tr className="body_part" key={idx}>
                       <td>
-                        <img src={e.picture.thumbnail} />
+                        <img alt="pic2" src={e.picture.thumbnail} />
                       </td>
                       <td>{e.name.first}</td>
                       <td>{e.email}</td>
@@ -124,7 +124,7 @@ const User = () => {
               return (
                 <tr className="body_part" key={idx}>
                   <td>
-                    <img src={e.picture.thumbnail} />
+                    <img alt="pic3" src={e.picture.thumbnail} />
                   </td>
                   <td>{e.name.first}</td>
                   <td>{e.email}</td>
