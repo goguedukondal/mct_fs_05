@@ -1,7 +1,7 @@
 import React from "react";
 import './Home.css';
 import Navbar from './Navbar'
-import { BrowserRouter,Route,Routes } from 'react-router-dom'
+
 const Home = () => {
   return (
     <div className="Home">
