@@ -1,0 +1,21 @@
+.Home{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    padding: 50px;
+    padding-top: 30px;
+    
+}
+.welcome{
+    margin-top: 200px;
+    text-align: center;
+    font-weight: 800;
+}
+.explore{
+    color: blue;
+   margin-left: 500px;
+   margin-top: 30px;
+   background-color: black;
+   border: 1px solid blue;
+   padding: 10px;
+}
