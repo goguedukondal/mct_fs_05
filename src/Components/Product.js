@@ -17,11 +17,7 @@ const Product = () => {
         setData(data);
       });
 
-      // fetch(`https://fakestoreapi.com/products/category/electronic`)
-      // .then((res) => res.json())
-      // .then((data) => {
-      //   setData2(data);
-      // });
+      
 
   }, []);
 
@@ -32,15 +28,19 @@ const Product = () => {
         setData2(data);
       });
   }, [cat]);
-  
+  const select=(e)=>{
+    setCat(e.target.innerText)
+
+  }
+  console.log(cat)
   return (
     <div>
       <Navbar />
       <div className="product_container">
         
         <div className="left_panel">
-          {data.map((it, i) => {
-            return <p onClick={()=>{setCat({it})}} key={i}>{it}</p>;
+          {data.map((item, i) => {
+            return <p onClick={(e)=>select(e)} key={i}>{item}</p>;
           })}
         </div>
         <div className="right_panel">
